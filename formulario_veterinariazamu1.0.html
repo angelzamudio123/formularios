@@ -8,101 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <title>Alta de Veterinarios</title>
-</head>
-
-<body>
-
-<header>
-    <h1>VETERINARIA ANGEL_ANIMAL_CENTER</h1>
-    <img width="250" src="vet4.png">
-    <p color:withe> Veterinarios </p>
-</header>
-
-<main>
-
-    <div class="form-container">
-
-        <form action="altas.html" method="POST">
-
-            <div class="form-group">
-                <label>ID Veterinario:</label>
-                <input type="number" name="ID_Veterinario" required>
-            </div>
-
-            <div class="form-group">
-                <label>Nombre:</label>
-                <input type="text" name="Nombre" required>
-            </div>
-
-            <div class="form-group">
-                <label>Especialidad:</label>
-                <input type="text" name="Especialidad" required>
-            </div>
-
-            <div class="form-group">
-                <label>Cédula Profesional:</label>
-                <input type="text" name="Cedula_Profesional" required>
-            </div>
-
-            <div class="form-group">
-                <label>Teléfono:</label>
-                <input type="number" name="Telefono" required>
-            </div>
-
-            <div class="form-group">
-                <label>Correo:</label>
-                <input type="email" name="Correo" required>
-            </div>
-
-            <div class="form-group">
-                <label>Horario:</label>
-                <input type="text" name="Horario" required>
-            </div>
-
-            <div class="form-group">
-                <label>Consultorio:</label>
-                <input type="text" name="Consultorio" required>
-            </div>
-
-            <div class="form-group">
-                <label>RFC:</label>
-                <input type="text" name="RFC" required>
-            </div>
-
-            <div class="form-group">
-                <label>Domicilio:</label>
-                <input type="text" name="Domicilio" required>
-            </div>
-
-            <button type="submit" class="btn-submit">
-                Dar de alta al Veterinario
-            </button>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="veterinarios1.0.html">Veterinarios</a></li>
-            <li><a href="propietarios1.0.html">Propietarios</a></li>
-            <li><a href="mascotas1.html">mascotas registrtadas</a></li>
-            <li><a href="citas1.html">citas solicitadas</a></li>
-            <li><a href="facturacion1.1.html">facturacion</a></li>
-        </ul>
-    </nav>
-        </form>
-
-    </div>
-
-    <a href="index.html" class="btn-back">
-        Volver al Inicio
-    </a>
-
-</main>
-
-<footer>
-    <p>Angel Eduardo Zamudio Vega - Programación</p>
-    <p>24308051280679 - 4-I</p>
-</footer>
-
-</body>
 
 <style>
 
@@ -137,6 +42,44 @@ h1{
     margin-bottom:15px;
 }
 
+header p{
+    color:white;
+    font-size:18px;
+    margin-top:10px;
+}
+
+nav{
+    width:100%;
+    margin-top:20px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding:12px 18px;
+    background-color:#ca9ec3;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s ease;
+    font-family:"Poppins",sans-serif;
+}
+
+nav ul li a:hover{
+    background-color:#b382ab;
+    transform:scale(1.05);
+}
+
 main{
     display:flex;
     flex-direction:column;
@@ -154,6 +97,7 @@ main{
     border-radius:12px;
     box-shadow:0 8px 24px rgba(245,228,242,0.15);
     border-top:6px solid #ca9ec3;
+    margin-top:30px;
 }
 
 .form-group{
@@ -242,4 +186,105 @@ footer p{
 
 </style>
 
+</head>
+
+<body>
+
+<header>
+
+    <h1>VETERINARIA ANGEL_ANIMAL_CENTER</h1>
+
+    <img width="250" src="vet4.png">
+
+    <p>Veterinarios</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="veterinarios1.0.html">Veterinarios</a></li>
+            <li><a href="propietarios1.0.html">Propietarios</a></li>
+            <li><a href="mascotas1.html">Mascotas Registradas</a></li>
+            <li><a href="citas1.html">Citas Solicitadas</a></li>
+            <li><a href="facturacion1.1.html">Facturación</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="form-container">
+
+        <form action="altas.html" method="POST">
+
+            <div class="form-group">
+                <label>ID Veterinario:</label>
+                <input type="number" name="ID_Veterinario" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" name="Nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label>Especialidad:</label>
+                <input type="text" name="Especialidad" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cédula Profesional:</label>
+                <input type="text" name="Cedula_Profesional" required>
+            </div>
+
+            <div class="form-group">
+                <label>Teléfono:</label>
+                <input type="number" name="Telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label>Correo:</label>
+                <input type="email" name="Correo" required>
+            </div>
+
+            <div class="form-group">
+                <label>Horario:</label>
+                <input type="text" name="Horario" required>
+            </div>
+
+            <div class="form-group">
+                <label>Consultorio:</label>
+                <input type="text" name="Consultorio" required>
+            </div>
+
+            <div class="form-group">
+                <label>RFC:</label>
+                <input type="text" name="RFC" required>
+            </div>
+
+            <div class="form-group">
+                <label>Domicilio:</label>
+                <input type="text" name="Domicilio" required>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Dar de alta al Veterinario
+            </button>
+
+        </form>
+
+    </div>
+
+    <a href="index.html" class="btn-back">
+        Volver al Inicio
+    </a>
+
+</main>
+
+<footer>
+    <p>Angel Eduardo Zamudio Vega - Programación</p>
+    <p>24308051280679 - 4-I</p>
+</footer>
+
+</body>
 </html>
