@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Alta de Propietarios</title>
+</head>
+
+<body>
+
+<header>
+    <h1>VETERINARIA ANGEL_ANIMAL_CENTER</h1>
+    <img width="250" src="vet4.png">
+    <p color:withe> Propietarios </p>
+</header>
+
+<main>
+
+    <div class="form-container">
+
+        <form action="altas.html" method="POST">
+
+            <div class="form-group">
+                <label>ID Propietarios:</label>
+                <input type="number" name="ID_Propietarios" required>
+            </div>
+
+            <div class="form-group">
+                <label>Apellidos:</label>
+                <input type="text" name="Apellidos" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" name="Nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cédula Telefonos:</label>
+                <input type="text" name="Telefonos" required>
+            </div>
+
+            <div class="form-group">
+                <label>Correo:</label>
+                <input type="number" name="Correo" required>
+            </div>
+
+            <div class="form-group">
+                <label>Direccion:</label>
+                <input type="email" name="Direccion" required>
+            </div>
+
+            <div class="form-group">
+                <label>Fecha_Registro:</label>
+                <input type="text" name="Fecha_Registro" required>
+            </div>
+
+            <div class="form-group">
+                <label>ID_Mascota:</label>
+                <input type="text" name="ID_Mascota" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre_Mascota:</label>
+                <input type="text" name="Nombre_Mascota" required>
+            </div>
+
+            
+        </form>
+
+    </div>
+
+    <a href="index.html" class="btn-back">
+        Volver al Inicio
+    </a>
+
+</main>
+
+<footer>
+    <p>Angel Eduardo Zamudio Vega - Programación</p>
+    <p>24308051280679 - 4-I</p>
+</footer>
+
+</body>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background-color:#000000;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+}
+
+header{
+    background-color:#111111;
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(255,255,255,0.05);
+}
+
+h1{
+    color:#ffffff;
+    font-family:'Jua',sans-serif;
+    margin:0;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    padding:40px 20px;
+    flex:1;
+}
+
+.form-container{
+    max-width:500px;
+    width:100%;
+    background:#1a1a1a;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 24px rgba(245,228,242,0.15);
+    border-top:6px solid #ca9ec3;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#dddddd;
+    font-size:14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"]{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #444;
+    border-radius:6px;
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    background-color:#2b2b2b;
+    color:#ffffff;
+    transition:all 0.3s ease;
+}
+
+input:focus{
+    outline:none;
+    border-color:#ca9ec3;
+    background-color:#333333;
+    box-shadow:0 0 5px rgba(202,158,195,0.5);
+}
+
+.btn-submit{
+    background-color:#ca9ec3;
+    color:black;
+    border:none;
+    padding:14px 15px;
+    width:100%;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+    font-family:"Poppins",sans-serif;
+    margin-top:10px;
+}
+
+.btn-submit:hover{
+    background-color:#b382ab;
+    transform:scale(1.02);
+}
+
+.btn-back{
+    display:inline-block;
+    text-align:center;
+    margin-top:25px;
+    color:#cccccc;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+.btn-back:hover{
+    color:#ca9ec3;
+}
+
+footer{
+    width:100%;
+    background-color:#111111;
+    padding:15px 0;
+    text-align:center;
+    font-size:13px;
+    color:#aaaaaa;
+    border-top:1px solid #222;
+}
+
+footer p{
+    margin:4px 0;
+}
+
+</style>
+
+</html>
